@@ -1,0 +1,41 @@
+<div class="card card-block">
+    <h4 class="card-title">Create Movie Review</h4>
+    <form novalidate [formGroup]="movieReviewFrom" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Title</label>
+
+            <input type="text" class="form-control" placeholder="Enter the Title" formControlName="title">
+            <div class="form-control-feedback" *ngIf="movieReviewFrom.controls.title.errors && (movieReviewFrom.controls.title.dirty ||
+            movieReviewFrom.controls.title.touched)">
+                <p class="is-danger" *ngIf="movieReviewFrom.controls.title.errors.required">Title is required</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Desciption</label>
+
+            <input type="text" formControlName='description' class="form-control" placeholder="Enter the Desciption">
+            <div class="form-control-feedback" *ngIf="movieReviewFrom.controls.description.errors && (movieReviewFrom.controls.description.dirty ||
+            movieReviewFrom.controls.description.touched)">
+                <p class="is-danger" *ngIf="movieReviewFrom.controls.description.errors.required">Description is
+                    required</p>
+                <p class="is-danger" *ngIf="movieReviewFrom.get('description').hasError('minlength')">Description must
+                    be atleast 10 characters</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>rating</label>
+
+            <input type="text" formControlName='rating' class="form-control" placeholder="Enter the rating">
+            <div class="form-control-feedback" *ngIf="rating.errors && (rating.dirty ||
+            rating.touched)">
+                <p class="is-danger" *ngIf="rating.errors.required">Rating is
+                    required</p>
+
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Create
+        </button>
+        <pre>{{movieReviewFrom.value | json}}</pre>
+    </form>
+
+</div>

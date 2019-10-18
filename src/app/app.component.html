@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 *myIf="true" [highlight]="yellow">
+    Welcome to {{ title}}!
+  </h1>
+</div>
+<div style="text-align:center">
+  <a [routerLink]="['welcome']" style="padding:0 10px;" routerLinkActive="active">Welcome</a>
+  <a [routerLink]="['blog']" style="padding:0 10px;" routerLinkActive="active">Blog</a>
+  <a [routerLink]="['about']" style="padding:0 10px;" routerLinkActive="active">about</a>
+  <a [routerLink]="['movies']" style="padding:0 10px;" routerLinkActive="active">Movies</a>
+</div>
+<router-outlet></router-outlet>
+<!-- <div>
+  <movie-list></movie-list>
+</div> -->

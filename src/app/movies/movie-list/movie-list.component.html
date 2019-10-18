@@ -1,0 +1,20 @@
+<div>
+    <add-mobie-review-fb></add-mobie-review-fb>
+    <!-- <add-movie-review-model></add-movie-review-model> -->
+    <!-- <add-new-movie (movieCreated)="addMoviereview($event)"></add-new-movie> -->
+    <movie *ngFor="let mov of movies" [movie]="mov">
+        <!-- <p>{{mov.rating}}</p> -->
+        <!-- <span>{{mov.rating}}</span> -->
+        <rating [rate]="mov.rating"></rating>
+        <!-- <span>I am coming from Parent component<pre ngNonBindable>{{sample}}</pre></span> -->
+    </movie>
+
+    <input #myfavMovie placeholder="Your favorite movie goes here">
+    <!-- <div *ngFor="let mov of movies">
+        <h1>{{mov.title}}</h1>
+        <p [hidden]="mov.hideDesc">{{mov.description}}</p>
+        <span>{{mov.rating}}</span>
+        <button (click)="toogle(mov)">Hide Description</button>
+    </div> -->
+    <!-- {{movies | json}} -->
+</div>

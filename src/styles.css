@@ -1,0 +1,15 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+ }
+ input.ng-valid.ng-touched {
+    border: 1px solid green;
+ }
+
+ .is-danger{
+     color: red;
+ }
+
+ .active{
+    font-size:25px;
+     }

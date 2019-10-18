@@ -1,0 +1,8 @@
+<p>blog works!</p>
+<a [routerLink]="['/blog/1']" style="padding:0 10px;">Blog 1</a>
+<a [routerLink]="['/blog/2']" style="padding:0 10px;">Blog 2</a>
+<a [routerLink]="['/blog/3']" style="padding:0 10px;">Blog 3</a>
+<a [routerLink]="['/blog/4']"  [queryParams]="{prop: 'xxx'}" queryParamsHandling="merge" style="padding:0 10px;">Blog
+    4</a>
+<a style="padding:0 10px;" (click)="navigateToBlog()"> Blog 5</a>
+<router-outlet></router-outlet>

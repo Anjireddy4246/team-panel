@@ -1,0 +1,15 @@
+<div class="card card-block">
+    <h4 class="card-title">Create Movie Review</h4>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter the Title"
+         #txtTitle>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter the Desciption" #txtDesc>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter the rating" #txtRating>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="createMovieReview(txtTitle.value, txtDesc.value, txtRating.value)">Create
+    </button>
+</div>

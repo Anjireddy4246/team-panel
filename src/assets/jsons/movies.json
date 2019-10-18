@@ -1,0 +1,20 @@
+[
+{
+    "title": "Devils home",
+    "description": "nice movie",
+    "rating": 5,
+    "hideDesc": true
+  },
+  {
+    "title": "Sweet home",
+    "description": "nice movie",
+    "rating": 5,
+    "hideDesc": true
+  },
+  {
+    "title": "Dummy home",
+    "description": "nice movie",
+    "rating": 5,
+    "hideDesc": true
+  }
+]

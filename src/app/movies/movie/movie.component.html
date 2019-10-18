@@ -1,0 +1,7 @@
+<div>
+    <h1>{{movie.title}}</h1>
+    <p [hidden]="movie.hideDesc">{{movie.description}}</p>
+    <ng-content></ng-content>
+    <button (click)="toogle(movie)">Hide Description</button>
+    <p *ngIf="movie.rating > '4'">We recommend this movie</p>
+</div>
